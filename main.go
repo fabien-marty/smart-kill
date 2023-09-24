@@ -93,10 +93,10 @@ func SmartKill(logger *slog.Logger, pid int, signal syscall.Signal, maxWaitMs in
 func main() {
 	cli.AppHelpTemplate += `
 EXIT CODES:
-    - 0: the process PID does not exist any more 
-	     (stopped or did not exist at program start)
-    - 1: the process PID is still here after this program stopped :-(
-    - 2: CLI error
+   - 0: the process PID does not exist any more 
+	    (stopped or did not exist at program start)
+   - 1: the process PID is still here after this program stopped :-(
+   - 2: CLI error
 `
 	app := &cli.App{
 		Name:      "smart-kill",

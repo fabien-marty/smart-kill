@@ -23,8 +23,8 @@ Example without browser:
 ```console
 OSARCH=linux-amd64
 VERSION=v0.1.2
-wget -O /usr/local/bin/smart-kill "https://github.com/fabien-marty/smart-kill/releases/download/${VERSION}/smart-kill-${VERSION}-${OSARCH}"
-chmod +x /usr/local/bin/smart-kill
+sudo wget -O /usr/local/bin/smart-kill "https://github.com/fabien-marty/smart-kill/releases/download/${VERSION}/smart-kill-${VERSION}-${OSARCH}"
+sudo chmod +x /usr/local/bin/smart-kill
 ```
 
 ## How to use?
@@ -47,10 +47,10 @@ GLOBAL OPTIONS:
    --help, -h         show help
 
 EXIT CODES:
-    - 0: the process PID does not exist any more
-       (stopped or did not exist at program start)
-    - 1: the process PID is still here after this program stopped :-(
-    - 2: CLI error
+   - 0: the process PID does not exist any more
+        (stopped or did not exist at program start)
+   - 1: the process PID is still here after this program stopped :-(
+   - 2: CLI error
 ```
 
 ## Roadmap
