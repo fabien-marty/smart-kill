@@ -16,9 +16,9 @@ clean:
 lint: golangci-lint
 	go vet
 	if test "$${FIX}" = "1"; then \
-		gofmt .; \
+		gofmt -s .; \
 	else \
-		gofmt -d .; \
+		gofmt -s -d .; \
 	fi
 	if test "$${FIX}" = "1"; then \
 		./golangci-lint run; \

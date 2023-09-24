@@ -1,5 +1,7 @@
 # smart-kill
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/fabien-marty/smart-kill)](https://goreportcard.com/report/github.com/fabien-marty/smart-kill)
+
 ## What is it?
 
 This is a little CLI tool written in [Golang](https://go.dev/) to:
